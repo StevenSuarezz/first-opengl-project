@@ -8,7 +8,7 @@ cd build/WSL/
 echo ====================== Running Makefile...
 make
 
-cd src/
-
 echo ====================== Running executable...
+mv src/first-opengl-project ../../bin
+cd ../../bin
 ./first-opengl-project

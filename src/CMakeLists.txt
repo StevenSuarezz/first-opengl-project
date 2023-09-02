@@ -1,4 +1,4 @@
-add_executable(first-opengl-project main.cpp)
+add_executable(first-opengl-project main.cpp shader.cpp)
 
 add_library(glad ${CMAKE_SOURCE_DIR}/third-party/glad/src/glad.c)
 target_include_directories(glad PUBLIC ${CMAKE_SOURCE_DIR}/third-party/glad/include)
