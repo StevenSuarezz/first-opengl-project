@@ -10,8 +10,8 @@ Shader::Shader(const std::string vertexPath, const std::string fragmentPath) {
     // Ensure ifstream objects can throw exceptions:
     vShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
     fShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-    try 
 
+    try 
     {
         // Open files
         vShaderFile.open(vertexPath);
@@ -25,7 +25,7 @@ Shader::Shader(const std::string vertexPath, const std::string fragmentPath) {
         fShaderFile.close();
         // Convert stream into string
         vertexCode   = vShaderStream.str();
-        fragmentCode = fShaderStream.str();		
+        fragmentCode = fShaderStream.str();
     }
     catch(std::ifstream::failure e)
     {
